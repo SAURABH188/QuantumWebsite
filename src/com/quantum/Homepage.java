@@ -228,4 +228,39 @@ System.out.println("Test Case Failed: Contact is not Visible");
 Thread.sleep(3000);
 }
 }
+
+	 @Test (priority= 15)
+	  //Test Case 16: Verify Banner Image visibility on Homepage
+	  public void Banner() throws InterruptedException  {
+		
+			
+			// Verify Banner Image
+			WebElement Banner = driver.findElement(By.xpath("/html/body/app-root/div/app-home/div/div[1]"));
+			Thread.sleep(3000);
+			Banner.click();
+			Thread.sleep(3000);
+if(Banner.isDisplayed()) {
+System.out.println("Test Case Passed: Banner is Visible");
+}else {
+System.out.println("Test Case Failed: Banner is not Visible");
+Thread.sleep(3000);
+}
+}
+	 @Test (priority= 16)
+	  //Test Case 17: Verify Get Started tab visibility on Homepage
+	  public void GetStartedTab() throws InterruptedException  {
+		
+			
+			// Verify GetStartedTab Image
+			WebElement GetStartedTab = driver.findElement(By.xpath("/html/body/app-root/div/app-home/div/div[1]/div/div[3]/button"));
+			Thread.sleep(3000);
+			GetStartedTab.click();
+			Thread.sleep(3000);
+if(GetStartedTab.isDisplayed()) {
+System.out.println("Test Case Passed: GetStartedTab is Visible");
+}else {
+System.out.println("Test Case Failed: GetStartedTab is not Visible");
+Thread.sleep(3000);
+}
+}
 }
