@@ -21,7 +21,7 @@ public class AboutUs {
 	}
 	@BeforeMethod
 	  		public void setUp() {
-	  			  System.setProperty("webdriver.chrome.driver", "C:\\Users\\SAURABH\\Desktop\\Chromedriver\\chromedriver-win64\\chromedriver.exe");
+	  			  System.setProperty("webdriver.chrome.driver", "C:\\Users\\SAURABH\\Downloads\\chromedriver-win64 (5)\\chromedriver-win64\\chromedriver.exe");
 	  			  driver=new ChromeDriver(); 
 	  			  driver.get("https://quantumitinnovation.com/");
 	  			  driver.manage().window().maximize();

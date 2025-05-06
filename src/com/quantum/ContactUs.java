@@ -17,7 +17,7 @@ public class ContactUs {
 	 @Test (priority= 1)
 	  //TEST CASE NO 1
 	  		public void setUp() {
-	  			  System.setProperty("webdriver.chrome.driver", "C:\\Users\\SAURABH\\Desktop\\Chromedriver\\129\\chromedriver-win64 (4)\\chromedriver-win64\\chromedriver.exe");
+	  			  System.setProperty("webdriver.chrome.driver", "C:\\Users\\SAURABH\\Downloads\\chromedriver-win64 (5)\\chromedriver-win64\\chromedriver.exe");
 	  			  driver=new ChromeDriver(); 
 	  			  driver.get("https://quantumitinnovation.com/");
 	  			  driver.manage().window().maximize();
@@ -66,7 +66,7 @@ public class ContactUs {
 		  JavascriptExecutor jss = (JavascriptExecutor) driver;
 
 
-	        jss.executeScript("window.scrollBy(0,100)");
+	        jss.executeScript("window.scrollBy(0,300)");
 		WebElement Submit = driver.findElement(By.xpath("//button[@type='submit']"));
 		Submit.click();
 		Thread.sleep(2000);

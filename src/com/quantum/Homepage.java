@@ -20,9 +20,9 @@ public class Homepage {
 	 @Test (priority= 1)
 	  //TEST CASE NO 1
 	  		public void setUp() {
-	  			  System.setProperty("webdriver.chrome.driver", "C:\\Users\\SAURABH\\Desktop\\Chromedriver\\chromedriver-win64\\chromedriver.exe");
+	  			  System.setProperty("webdriver.chrome.driver","C:\\Users\\SAURABH\\Downloads\\chromedriver-win64 (5)\\chromedriver-win64\\chromedriver.exe");
 	  			  driver=new ChromeDriver(); 
-	  			  driver.get("https://quantumit.vercel.app/");
+	  			  driver.get("https://quantumitinnovation.com/");
 	  			  driver.manage().window().maximize();
 	  			 driver.manage().timeouts().implicitlyWait(30,TimeUnit.SECONDS);	  			
 	  }
@@ -45,7 +45,7 @@ public class Homepage {
 		
 			
 			// Click Logo
-			WebElement Logo= driver.findElement(By.xpath("//*[@id=\"navbarColor01\"]/div/div[1]/a/img"));
+			WebElement Logo= driver.findElement(By.xpath("/html/body/nav/div/div[1]/a/img"));
 			Logo.click();
 
 if(Logo.isDisplayed()) {
@@ -248,21 +248,4 @@ System.out.println("Test Case Failed: Banner is not Visible");
 Thread.sleep(3000);
 }
 }
-	 @Test (priority= 16)
-	  //Test Case 17: Verify Get Started tab visibility on Homepage
-	  public void GetStartedTab() throws InterruptedException  {
-		
-			
-			// Verify GetStartedTab Image
-			WebElement GetStartedTab = driver.findElement(By.xpath("/html/body/app-root/div/app-home/div/div[1]/div/div[3]/button"));
-			Thread.sleep(3000);
-			GetStartedTab.click();
-			Thread.sleep(3000);
-if(GetStartedTab.isDisplayed()) {
-System.out.println("Test Case Passed: GetStartedTab is Visible");
-}else {
-System.out.println("Test Case Failed: GetStartedTab is not Visible");
-Thread.sleep(3000);
-}
-}
-}
+	 
